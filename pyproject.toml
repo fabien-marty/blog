@@ -8,7 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 mkdocs-material = "^9.5.4"
-mkdocs-rss-plugin = "^1.12.0"
+mkdocs-rss-plugin = { git = "https://github.com/fabien-marty/mkdocs-rss-plugin.git", branch = "main" }
 jinja-tree = { git = "https://github.com/fabien-marty/jinja-tree.git", branch = "main" }
 #mkdocs-exclude = "^1.0.2"
 #mkdocs-awesome-pages-plugin = "^2.9.2"

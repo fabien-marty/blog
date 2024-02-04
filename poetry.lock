@@ -477,10 +477,8 @@ version = "1.12.0"
 description = "MkDocs plugin which generates a static RSS feed using git log and page.meta."
 optional = false
 python-versions = ">=3.8, <4"
-files = [
-    {file = "mkdocs-rss-plugin-1.12.0.tar.gz", hash = "sha256:81ccf8d328539e59960b08466a7aaefc5937b4747534e624166429e4a274dcca"},
-    {file = "mkdocs_rss_plugin-1.12.0-py2.py3-none-any.whl", hash = "sha256:e2150df0765ce077bdbf884964fbd04dce78c564e42e5d13c2046e394736965c"},
-]
+files = []
+develop = false
 
 [package.dependencies]
 GitPython = ">=3.1,<3.2"
@@ -488,9 +486,15 @@ mkdocs = ">=1.4,<2"
 tzdata = {version = "==2023.*", markers = "python_version >= \"3.9\" and sys_platform == \"win32\""}
 
 [package.extras]
-dev = ["black", "flake8 (>=6,<7)", "flake8-bugbear (>=23.12)", "flake8-builtins (>=2.1)", "flake8-eradicate (>=1)", "flake8-isort (>=6)", "pre-commit (>=3,<4)"]
-doc = ["mkdocs-git-committers-plugin-2 (>=1.2,<2.3)", "mkdocs-git-revision-date-localized-plugin (>=1,<1.3)", "mkdocs-material[imaging] (>=9.5.1,<10)", "mkdocs-minify-plugin (==0.7.*)", "mkdocstrings[python] (>=0.18,<1)", "termynal (>=0.11.1,<0.12)"]
+dev = ["black", "flake8 (>=6,<8)", "flake8-bugbear (>=23.12)", "flake8-builtins (>=2.1)", "flake8-eradicate (>=1)", "flake8-isort (>=6)", "pre-commit (>=3,<4)"]
+doc = ["mkdocs-git-committers-plugin-2 (>=1.2,<2.3)", "mkdocs-git-revision-date-localized-plugin (>=1,<1.3)", "mkdocs-material[imaging] (>=9.5.1,<10)", "mkdocs-minify-plugin (==0.8.*)", "mkdocstrings[python] (>=0.18,<1)", "termynal (>=0.11.1,<0.12)"]
 test = ["feedparser (>=6.0.11,<6.1)", "jsonfeed-util (>=1.1.2,<2)", "mkdocs-material[imaging] (>=9)", "pytest-cov (>=4,<4.2)", "validator-collection (>=1.5,<1.6)"]
+
+[package.source]
+type = "git"
+url = "https://github.com/fabien-marty/mkdocs-rss-plugin.git"
+reference = "main"
+resolved_reference = "f8798ef862279a15b17dac3db66a77e0b21501f9"
 
 [[package]]
 name = "natsort"
@@ -986,4 +990,4 @@ bracex = ">=2.1.1"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "2ad226ad3007ca6004cedbd3dfc5c21e9becb32b8d2aa45de283b46a1afd6636"
+content-hash = "8f92ea32be8b9165c97aa495057f42d3eecadbd0ca32691047cbe7dad74a2a2a"
