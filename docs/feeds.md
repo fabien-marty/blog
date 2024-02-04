@@ -19,4 +19,4 @@ In you don't want to miss anything, you will find below RSS feeds for this blog.
 
 ## For subscribing into the excellent [Feedly](https://feedly.com/) service
 
-[![](img/feedly.png){: style="width:150px"}](https://feedly.com/i/subscription/feed/{{ encoded_feed_url }})
+[![](img/feedly.png){: style="width:150px"}](https://feedly.com/i/subscription/feed%2F{{ encoded_feed_url }})
