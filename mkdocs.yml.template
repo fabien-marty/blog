@@ -1,0 +1,64 @@
+site_name: Blog of a Staff Software Engineer
+site_description: Blog of a Staff Software Engineer
+site_url: {{ SITE_URL|default("http://localhost:8000") }}
+copyright: © 2024 Fabien MARTY <fab@fabien-marty.dev>
+site_author: Fabien MARTY <fab@fabien-marty.dev>
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.sections
+  palette:
+    primary: blue grey
+    accent: teal
+
+markdown_extensions:
+  - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - pymdownx.tasklist:
+      custom_checkbox: false
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      toc_depth: 2
+
+plugins:
+  - awesome-pages
+  - blog:
+      blog_dir: posts
+      post_readtime: false
+      archive_url_date_format: yyyy/MM
+  - search
+  - tags:
+     tags_file: posts/tags.md
+  - rss:
+      match_path: posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - tags
+  - macros
+  - glightbox
+
+{% set site_url=SITE_URL|default("http://localhost:8000") %}
+{% set encoded_feed_url=(site_url + "/feed_rss_created.xml")|urlencode(safe='') %}
+
+extra:
+  botify_link: "[Botify](https://botify.com/)"
+  cloudflare_link: "[Cloudflare](https://cloudflare.com/)"
+  github_link: "[GitHub](https://github.com)"
+  site_url: "{{ site_url }}"
+  encoded_feed_url: "{{ encoded_feed_url }}"
