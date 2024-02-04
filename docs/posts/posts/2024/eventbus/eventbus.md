@@ -7,6 +7,8 @@ authors:
 tags:
   - golang
   - architecture
+image: eventbus.jpg
+description: " " 
 ---
 
 # When and how to use an "eventbus" inside a Golang application?

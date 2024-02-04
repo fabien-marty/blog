@@ -6,6 +6,8 @@ authors:
   - fabien
 tags:
   - architecture
+description: " " 
+image: webservers.jpg
 ---
 
 # How is this blog operated? And how is it securely hosted for free at Cloudflare?
