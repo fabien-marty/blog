@@ -1,8 +1,8 @@
 site_name: Blog of a Staff Software Engineer
 site_description: Blog of a Staff Software Engineer
 site_url: {{ SITE_URL|default("http://localhost:8000") }}
-copyright: © 2024 Fabien MARTY <fab@fabien-marty.dev>
-site_author: Fabien MARTY <fab@fabien-marty.dev>
+copyright: © 2024 Fabien MARTY
+site_author: Fabien MARTY
 
 theme:
   name: material
