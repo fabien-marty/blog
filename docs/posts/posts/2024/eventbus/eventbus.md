@@ -13,7 +13,7 @@ description: " "
 
 # When and how to use an "eventbus" inside a Golang application?
 
-![](eventbus.jpg){align=right : style="width:300px"}
+![](eventbus.jpg){align=right : style="width:200px"}
 
 ## Eventbus?
 

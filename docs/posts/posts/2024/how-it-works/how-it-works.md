@@ -12,7 +12,7 @@ image: webservers.jpg
 
 # How is this blog operated? And how is it securely hosted for free at Cloudflare?
 
-![](webservers.jpg){align=right : style="width:300px"}
+![](webservers.jpg){align=right : style="width:200px"}
 
 ## My requirements for a personal blog
 
