@@ -7,12 +7,12 @@ authors:
 tags:
   - architecture
 description: " " 
-image: webservers.jpg
+image: webservers.webp
 ---
 
 # How is this blog operated? And how is it securely hosted for free at Cloudflare?
 
-![](webservers.jpg){align=right : style="width:200px"}
+![](webservers.webp){align=right}
 
 ## My requirements for a personal blog
 
@@ -55,7 +55,7 @@ Finally, this is a personal project, I can't count on a team to update a server 
 
 ## Overall architecture
 
-![blog-architecture-diagram](blog-architecture.png)
+![blog-architecture-diagram](blog-architecture.webp)
 
 I think that the previous diagram is self-explanatory:
 

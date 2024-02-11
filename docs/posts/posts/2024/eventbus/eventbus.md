@@ -7,13 +7,13 @@ authors:
 tags:
   - golang
   - architecture
-image: eventbus.jpg
+image: eventbus.webp
 description: " " 
 ---
 
 # When and how to use an "eventbus" inside a Golang application?
 
-![](eventbus.jpg){align=right : style="width:200px"}
+![](eventbus.webp){align=right}
 
 ## Eventbus?
 
@@ -26,7 +26,7 @@ But it can also make sense in a monolithic application, and that's what I'm goin
 
 <!-- more -->
 
-![](eventbus.png)
+![](eventbus-diagram.webp)
 
 ## In a Golang application?
 
