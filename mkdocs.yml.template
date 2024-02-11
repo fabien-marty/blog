@@ -60,3 +60,6 @@ extra:
   github_link: "[GitHub](https://github.com)"
   site_url: "{{ site_url }}"
   encoded_feed_url: "{{ encoded_feed_url }}"
+  analytics:
+    provider: google
+    property: G-G9V0V5BGHC
