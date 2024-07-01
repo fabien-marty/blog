@@ -59,10 +59,12 @@ jobs:
         run: |
           git diff --exit-code
       - name: Install rclone
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         run: |
           sudo apt-get update
           sudo apt-get install rclone
       - name: Sync with rclone
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         env:
           RCLONE_CONFIG_MYS3_TYPE: s3
           RCLONE_CONFIG_MYS3_PROVIDER: ${{ secrets.AWS_S3_PROVIDER }}
@@ -75,4 +77,3 @@ jobs:
         run: |
           rclone --version
           rclone sync site mys3:${{ env.BUCKET }} --checksum --fast-list --verbose
-
